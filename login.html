@@ -22,7 +22,7 @@
         <!-- 登录盒子 -->
         <div class="login-box">
             <!-- 登录的表单 -->
-            <form class="layui-form">
+            <form class="layui-form" id="form_login">
                 <!-- 用户账号 -->
                 <div class="layui-form-item">
                     <i class="layui-icon">&#xe66f;</i> 
@@ -31,7 +31,7 @@
                 <!-- 用户密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon">&#xe673;</i> 
-                    <input type="password" name="password" required  lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <input type="password" name="password" required  lay-verify="required|pwd" placeholder="请输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <!-- 提交按钮 -->
                 <div class="layui-form-item">
@@ -44,13 +44,40 @@
         </div>
         <!-- 注册盒子 -->
         <div class="reg-box">
-            <a href="javascript:;" id="link_login">去登陆</a>
+            <!-- 注册的表单 -->
+            <form class="layui-form" id="form_reg">
+                <!-- 用户账号 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon">&#xe66f;</i> 
+                    <input type="text" name="username" required  lay-verify="required" 
+                    placeholder="请输入账号" autocomplete="off" class="layui-input" >
+                </div>
+                <!-- 用户密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon">&#xe673;</i> 
+                    <input type="password" name="password" required  lay-verify="required|pwd" 
+                    placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 再次确认密码 -->
+                <div class="layui-form-item">
+                    <i class="layui-icon">&#xe673;</i> 
+                    <input type="password" name="repassword" required  lay-verify="required|pwd|repwd" placeholder="请再次输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <!-- 提交按钮 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+                <div class="layui-form-item link">
+                    <a href="javascript:;" id="link_login">去登陆</a>
+                </div>
         </div>
     </div>
-
+    <!-- 导入layui的JS文件 -->
+    <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 导入jQuery -->
     <script src="./assets/lib/jquery.js"></script>
-
+    <!-- 导入自己封装的baseAPI.js -->
+    <script src="./assets/js/baseAPI.js"></script>
     <!-- 导入自己的js -->
     <script src="./assets/js/login.js"></script>
 </body>
