@@ -10,7 +10,7 @@ $(function() {
             }
         }
     })
-    // 获取用户信息
+    // 获取用户的信息
     initUserInfo()
     // 定义获取用户信息
     function initUserInfo() {

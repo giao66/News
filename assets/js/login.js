@@ -57,7 +57,7 @@ $(function() {
 
                 // 将登录成功获得的token存储到localstora
                 localStorage.setItem('token', res.token)
-                // 跳转到首页
+                // 跳转到首页面
                 location.href = '/index.html'
             }
         })

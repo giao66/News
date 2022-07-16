@@ -42,7 +42,7 @@ $(function() {
         })
         .toDataURL('image/png')       // 将 Canvas 画布上的内容，转化为 base64 格式的字符串
 
-        // 将头像上传
+        // 将头像进行上传
         $.ajax({
             method: 'POST',
             url: '/my/update/avatar',
