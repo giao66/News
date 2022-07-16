@@ -54,7 +54,6 @@ $(function() {
                     return layer.msg(res.message)
                 }
                 layer.msg('登录成功')
-
                 // 将登录成功获得的token存储到localstora
                 localStorage.setItem('token', res.token)
                 // 跳转到首页
