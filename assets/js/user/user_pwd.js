@@ -20,7 +20,7 @@ $(function() {
                     }   
     })
 
-    // 提交修改密码请求
+    // 提交修改密码的请求
     $('.layui-form').on('submit', function(e) {
         e.preventDefault()
         $.ajax({

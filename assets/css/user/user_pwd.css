@@ -9,6 +9,7 @@ body {
     background-color: #f2f3f5;
 }
 
+/* 设置输入框宽度 */
 .layui-input {
     width: 500px;
 }

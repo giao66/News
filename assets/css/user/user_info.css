@@ -8,6 +8,7 @@ body {
     padding: 20px;
 }
 
+/* 设置输入框宽度 */
 .layui-input {
     width: 500px;
 }

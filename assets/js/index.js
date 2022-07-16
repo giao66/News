@@ -24,7 +24,7 @@ function getUserInfo() {
             if(res.status !== 0) {
                 return layer.msg('获取用户信息失败！')
             }
-            // 调用渲染用户头像
+            // 调用渲染用户的头像
             renderAvatar(res.data)
             console.log(res)
         }
