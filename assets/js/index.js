@@ -13,6 +13,8 @@ $(function() {
     })
 })
 
+})
+
 // 获取用户的基本信息
 function getUserInfo() {
     $.ajax({
@@ -24,6 +26,7 @@ function getUserInfo() {
             }
             // 调用渲染用户头像
             renderAvatar(res.data)
+            console.log(res)
         }
     })
 }
@@ -47,4 +50,3 @@ function renderAvatar(user) {
         $('.text-avatar').html(first).show()
     }
 }
-})
