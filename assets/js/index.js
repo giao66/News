@@ -26,7 +26,6 @@ function getUserInfo() {
             }
             // 调用渲染用户的头像
             renderAvatar(res.data)
-            console.log(res)
         }
     })
 }
